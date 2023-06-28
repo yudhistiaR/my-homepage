@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
                 <Navbar />
                 <AnimatePresence>
                     <motion.main
-                        className="mx-auto h-screen container items-center px-3 md:px-0"
+                        className="mx-auto h-screen md:container items-center px-3 md:px-0"
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
                         exit={{ scale: 0 }}

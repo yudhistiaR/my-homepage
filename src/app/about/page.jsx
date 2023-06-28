@@ -17,6 +17,9 @@ const About = () => {
                     <div className="text-2xl md:text-5xl">My Homepage</div>
                 </div>
             </section>
+            <section className="relative">
+                <h1>Makan nasi iwak karing</h1>
+            </section>
         </>
     );
 };

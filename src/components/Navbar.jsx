@@ -26,11 +26,6 @@ const navLink = [
         name: 'Blog',
         href: '/blog',
     },
-    {
-        id: 5,
-        name: 'Contact',
-        href: '/contact',
-    },
 ];
 
 const NavList = ({ variant }) => {

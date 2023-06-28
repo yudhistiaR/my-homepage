@@ -39,7 +39,7 @@ const MediaLink = () => {
     return (
         <div className="hidden md:flex">
             {footerLink.map(link => (
-                <Link key={link.id} href={link.href}>
+                <Link key={link.id} href={link.href} target="_blank">
                     <Image
                         src={link.src}
                         width={30}
@@ -58,7 +58,7 @@ const Footer = () => {
     const year = date.getFullYear();
 
     return (
-        <footer className="w-full md:container flex items-center md:justify-between justify-center text-sm">
+        <footer className="mx-auto py-2 md:container flex items-center md:justify-between justify-center text-sm">
             <div>© {year} Yudhistia Rahman. All Rights Reserved.</div>
             <MediaLink />
         </footer>
