@@ -64,7 +64,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="w-full fixed px-3 py-2 md:py-0  md:px-0 backdrop-blur-md items-center flex justify-center">
+        <nav className="w-full fixed px-3 py-2 md:py-0  md:px-0 backdrop-blur-md items-center flex justify-center z-50">
             <div className="container flex justify-between items-center">
                 <div className="text-xl font-semibold items-center">
                     <Link href="/">
@@ -120,7 +120,7 @@ const Navbar = () => {
                             },
                         }}
                         style={{ pointerEvents: isOpen ? 'auto' : 'none' }}
-                        className="w-44 flex flex-col absolute top-6 right-4"
+                        className="w-44 flex flex-col absolute top-6 right-4 bg-slate-800"
                     >
                         <NavList variants={itemVariants} />
                     </motion.ul>

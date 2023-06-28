@@ -2,7 +2,9 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -13,6 +15,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+    const route = usePathname();
     return (
         <html lang="en">
             <body className={`${inter.className}`}>
@@ -28,7 +31,7 @@ export default function RootLayout({ children }) {
                         {children}
                     </motion.main>
                 </AnimatePresence>
-                {/* <Footer /> */}
+                {route !== '/' ? <Footer /> : ''}
             </body>
         </html>
     );
