@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
-import { motion, Variants } from 'framer-motion';
 import { useState } from 'react';
 import { BiSolidDownArrow } from 'react-icons/bi';
 

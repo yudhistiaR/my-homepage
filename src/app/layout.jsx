@@ -2,7 +2,6 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
 import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 
@@ -15,23 +14,22 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-    const route = usePathname();
     return (
         <html lang="en">
             <body className={`${inter.className}`}>
                 <Navbar />
                 <AnimatePresence>
                     <motion.main
-                        className="mx-auto h-screen md:container items-center px-3 md:px-0"
-                        initial={{ scale: 0 }}
-                        animate={{ scale: 1 }}
-                        exit={{ scale: 0 }}
-                        transition={{ duration: 0.6 }}
+                        className="h-full w-full items-center"
+                        initial={{ y: 40, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        exit={{ y: 10, opacity: 0 }}
+                        transition={{ duration: 0.4 }}
                     >
                         {children}
                     </motion.main>
                 </AnimatePresence>
-                {route !== '/' ? <Footer /> : ''}
+                {/* {route !== '/' ? <Footer /> : ''} */}
             </body>
         </html>
     );
