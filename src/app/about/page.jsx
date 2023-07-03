@@ -21,53 +21,75 @@ const About = () => {
                 </div>
             </div>
             <div className="container mx-auto px-2 md:px-0 md:mt-4 mt-5">
-                <div className="flex flex-col justify-center items-center">
-                    <Image
-                        src="/foto.jpg"
-                        width={120}
-                        height={120}
-                        alt="foto frofile"
-                        className="rounded-full border mb-2"
-                    />
-                    <div className="text-xl mb-1">M.Yudhsita Rahman</div>
-                    <div className="font-thin mb-2">Fron End Web Developer</div>
-                </div>
-                <div className="text-justify indent-5 md:indent-2 antialiased">
-                    <p>
-                        Saya memiliki semangat yang besar dalam membangun
-                        pengalaman web yang menarik dan responsif. Dengan latar
-                        belakang pendidikan di bidang teknologi web dan
-                        pengetahuan yang solid tentang HTML, CSS, dan
-                        JavaScript, saya siap untuk berkontribusi dalam proyek
-                        pengembangan web. Saya telah belajar tentang pembuatan
-                        tata letak yang responsif, pengoptimalan kinerja, serta
-                        praktik terbaik dalam pengembangan front-end. Saya
-                        memiliki pengalaman dalam menggunakan kerangka kerja
-                        seperti Bootstrap dan merasa nyaman dalam berkolaborasi
-                        dengan desainer UI/UX dan tim pengembangan untuk
-                        mencapai tujuan bersama. Saya selalu bersemangat untuk
-                        terus belajar dan mengikuti tren terbaru dalam industri
-                        web. Saya berusaha untuk mengembangkan keterampilan saya
-                        dengan terus menghadiri pelatihan dan mengikuti sumber
-                        daya belajar online. Saya percaya bahwa dengan dedikasi
-                        dan semangat, saya dapat terus tumbuh dan menjadi
-                        seorang Front-End Web Developer yang lebih baik. Saya
-                        juga memiliki keterampilan komunikasi yang baik dan
-                        kemampuan untuk bekerja dalam tim. Saya siap untuk
-                        menghadapi tantangan baru dan berkontribusi dalam
-                        lingkungan kerja yang mendukung pertumbuhan profesional.
-                        Terima kasih telah mengunjungi halaman profil saya. Saya
-                        berharap dapat berkesempatan untuk bekerja dengan Anda
-                        dalam membangun pengalaman web yang luar biasa. Jika
-                        Anda memiliki pertanyaan atau kesempatan proyek, jangan
-                        ragu untuk menghubungi saya.
+                <article className="text-justify antialiased p-4 border-zinc-700 border rounded-lg">
+                    <div className="flex justify-center items-center my-4 pb-4 md:w-1/3 w-full mx-auto border-b border-zinc-700 ">
+                        <Image
+                            src="/foto.jpg"
+                            width={50 * 2}
+                            height={50 * 2}
+                            alt="foto frofile"
+                            className="rounded-full border mb-2 mr-2"
+                        />
+                        <div className="flex flex-col gap-1">
+                            <div className="text-xl mb-1">
+                                M.Yudhsita Rahman
+                            </div>
+                            <div className="font-thin mb-2">
+                                Frontend Web Developer
+                            </div>
+                        </div>
+                    </div>
+                    <p className="py-4">
+                        Halo, nama saya Yudhisita! Saya seorang Junior Web
+                        Developer yang bersemangat dalam mengembangkan solusi
+                        web yang menarik dan fungsional. Saya memiliki
+                        pengetahuan dasar tentang HTML, CSS, dan JavaScript,
+                        serta kerangka kerja seperti React dan
+                        Bootstrap,Tailwindcss. Saya telah belajar tentang
+                        praktik terbaik dalam pengembangan web dan terus
+                        mengasah keterampilan saya dengan mempelajari sumber
+                        daya online dan mengikuti proyek-proyek sederhana. Saya
+                        percaya bahwa pengembangan web adalah kombinasi antara
+                        kreativitas dan logika, dan saya selalu berusaha untuk
+                        menciptakan pengalaman pengguna yang luar biasa. Saya
+                        senang bekerja dalam tim dan dapat beradaptasi dengan
+                        cepat dengan lingkungan kerja yang dinamis. Saya siap
+                        untuk belajar dari rekan-rekan yang lebih berpengalaman
+                        dan berkontribusi secara positif dalam mencapai tujuan
+                        bersama. Saya memiliki kemampuan komunikasi yang baik
+                        dan dapat mengartikulasikan ide-ide kompleks dengan
+                        jelas. Saya juga memiliki ketekunan yang tinggi dalam
+                        menyelesaikan tugas dan tantangan teknis. Saya selalu
+                        mencari cara untuk meningkatkan diri saya sendiri dan
+                        tetap terbarui dengan perkembangan terbaru di bidang
+                        teknologi web. Saya percaya bahwa sebagai seorang Junior
+                        Web Developer, kesempatan untuk belajar dan tumbuh
+                        adalah kunci dalam meraih kesuksesan. Saya sangat
+                        antusias untuk memperluas pengetahuan dan keterampilan
+                        saya, serta berkontribusi dalam membangun solusi web
+                        yang inovatif. Terima kasih telah mengunjungi profil
+                        saya. Saya sangat berharap dapat bergabung dengan tim
+                        yang bersemangat dan kolaboratif dalam menciptakan situs
+                        web yang menakjubkan. Jika Anda tertarik untuk bekerja
+                        sama atau memiliki pertanyaan, jangan ragu untuk
+                        menghubungi saya. Terima kasih dan salam
                     </p>
-                    <a href="/project" className="hover:text-red-500">
+                    <a href="/project" className="hover:text-red-500 ">
                         <span>
                             Project Saya{" "}
                             <BsArrowRight className="inline font-bold text-lg" />
                         </span>
                     </a>
+                </article>
+                <div className="items-center flex flex-col mt-4 border border-zinc-700 rounded-lg p-4">
+                    <div className="text-3xl md:text-4xl">
+                        Skills & Experiance
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Ullam voluptas, assumenda laudantium quod vitae
+                        reiciendis ipsam eos voluptatem repellendus explicabo!
+                    </p>
                 </div>
             </div>
         </>

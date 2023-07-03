@@ -2,10 +2,11 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Typed from "typed.js";
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 export default function Home() {
     const el = useRef(null);
+
     useEffect(() => {
         const typed = new Typed(el.current, {
             strings: ["Frontend Web Developer."],
@@ -14,8 +15,7 @@ export default function Home() {
             startDelay: 500,
             loop: true,
         });
-        console.log(typed);
-    });
+    }, []);
 
     return (
         <section className="mx-auto w-full h-screen md:container flex md:justify-between justify-center items-center">
