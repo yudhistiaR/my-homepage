@@ -1,6 +1,58 @@
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 
+const skilsIcons = [
+    {
+        id: 1,
+        logo: "/icons/html5.svg",
+        width: 70,
+        height: 70,
+        alt: "html logo",
+        name: "HTML 5",
+    },
+    {
+        id: 2,
+        logo: "/icons/css3.svg",
+        width: 70,
+        height: 70,
+        alt: "css logo",
+        name: "CSS3",
+    },
+    {
+        id: 3,
+        logo: "/icons/javascript.svg",
+        width: 70,
+        height: 70,
+        alt: "javascript logo",
+        name: "Javascript",
+    },
+    {
+        id: 4,
+        logo: "/icons/react.svg",
+        width: 70,
+        height: 70,
+        alt: "react logo",
+        name: "React js",
+        spin: true,
+    },
+    {
+        id: 5,
+        logo: "/icons/bootstrap.svg",
+        width: 70,
+        height: 70,
+        alt: "bootstrap logo",
+        name: "Bootstrap",
+    },
+    {
+        id: 6,
+        logo: "/icons/tailwind.svg",
+        width: 70,
+        height: 70,
+        alt: "tailwind logo",
+        name: "Tailwindcss",
+    },
+];
+
 const About = () => {
     return (
         <>
@@ -82,14 +134,30 @@ const About = () => {
                     </a>
                 </article>
                 <div className="items-center flex flex-col mt-4 border border-zinc-700 rounded-lg p-4">
-                    <div className="text-3xl md:text-4xl">
-                        Skills & Experiance
+                    <div className="text-3xl md:text-4xl">Skills</div>
+                    <div className="w-full py-5">
+                        <ul className="grid md:grid-cols-4 gap-5 grid-cols-2">
+                            {skilsIcons.map(el => (
+                                <li
+                                    key={el.id}
+                                    className="flex flex-col items-center  justify-center"
+                                >
+                                    <Image
+                                        src={el.logo}
+                                        width={el.width}
+                                        height={el.height}
+                                        alt={el.alt}
+                                        className={
+                                            el.spin
+                                                ? "hover:animate-spin"
+                                                : "hover:animate-bounce"
+                                        }
+                                    />
+                                    <div>{el.name}</div>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Ullam voluptas, assumenda laudantium quod vitae
-                        reiciendis ipsam eos voluptatem repellendus explicabo!
-                    </p>
                 </div>
             </div>
         </>
